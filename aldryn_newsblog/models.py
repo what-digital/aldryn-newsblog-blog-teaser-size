@@ -140,8 +140,8 @@ class Article(TranslatedAutoSlugifyMixin,
     featured_image = FilerImageField(null=True, blank=True,
                                      on_delete=models.SET_NULL)
     tags = TaggableManager(blank=True)
-    teaser_size = models.CharField(_('teaser size'), null=True, blank=True,
-                                   choices=TEASER_SIZES, max_length=255)
+    teaser_size = models.CharField(_('teaser size'),
+                                   choices=TEASER_SIZES, max_length=255, default='s')
 
     # Setting "symmetrical" to False since it's a bit unexpected that if you
     # set "B relates to A" you immediately have also "A relates to B". It have
