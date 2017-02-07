@@ -52,12 +52,12 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='aldryn-newsblog',
+    name='aldryn-newsblog-blog-teaser-size',
     version=__version__,
     description='Adds blogging and newsing capabilities to django CMS',
-    author='Divio AG',
-    author_email='info@divio.ch',
-    url='https://github.com/aldryn/aldryn-newsblog',
+    author='what.digital',
+    author_email='None',
+    url='https://github.com/what-digital/aldryn-newsblog-blog-teaser-size',
     packages=find_packages(),
     license='LICENSE.txt',
     platforms=['OS Independent'],

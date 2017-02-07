@@ -83,6 +83,11 @@ class Article(TranslatedAutoSlugifyMixin,
         'ALDRYN_NEWSBLOG_UPDATE_SEARCH_DATA_ON_SAVE',
         False
     )
+    TEASER_SIZES = (
+        ('s', 'small'),
+        ('m', 'medium'),
+        ('l', 'large')
+    )
 
     translations = TranslatedFields(
         title=models.CharField(_('title'), max_length=234),
@@ -135,6 +140,8 @@ class Article(TranslatedAutoSlugifyMixin,
     featured_image = FilerImageField(null=True, blank=True,
                                      on_delete=models.SET_NULL)
     tags = TaggableManager(blank=True)
+    teaser_size = models.CharField(_('teaser size'), null=True, blank=True,
+                                   choices=TEASER_SIZES)
 
     # Setting "symmetrical" to False since it's a bit unexpected that if you
     # set "B relates to A" you immediately have also "A relates to B". It have

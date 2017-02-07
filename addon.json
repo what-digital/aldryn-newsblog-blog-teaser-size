@@ -1,5 +1,5 @@
 {
-    "package-name": "aldryn-newsblog",
+    "package-name": "aldryn-newsblog-blog-teaser-size",
     "installed-apps": [
         "aldryn_apphooks_config",
         "aldryn_boilerplates",
