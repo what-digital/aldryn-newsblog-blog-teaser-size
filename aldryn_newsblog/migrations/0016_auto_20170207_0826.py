@@ -16,6 +16,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='article',
             name='teaser_size',
-            field=models.CharField(null=True, blank=True, verbose_name='teaser size'),
+            field=models.CharField(null=True, blank=True, verbose_name='teaser size', max_length=255),
         ),
     ]
