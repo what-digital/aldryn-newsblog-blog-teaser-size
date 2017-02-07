@@ -58,6 +58,7 @@ class ArticleAdminForm(TranslatableModelForm):
             'categories',
             'featured_image',
             'is_featured',
+            'teaser_size',
             'is_published',
             'lead_in',
             'meta_description',
@@ -122,6 +123,7 @@ class ArticleAdmin(
                 'is_published',
                 'is_featured',
                 'featured_image',
+                'teaser_size',
                 'lead_in',
             )
         }),
