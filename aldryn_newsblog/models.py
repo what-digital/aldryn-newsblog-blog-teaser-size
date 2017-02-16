@@ -142,6 +142,7 @@ class Article(TranslatedAutoSlugifyMixin,
     tags = TaggableManager(blank=True)
     teaser_size = models.CharField(_('teaser size'),
                                    choices=TEASER_SIZES, max_length=255, default='s')
+    twitter = models.CharField(_('twitter name'), max_length=255, blank=True, default='')
 
     # Setting "symmetrical" to False since it's a bit unexpected that if you
     # set "B relates to A" you immediately have also "A relates to B". It have
